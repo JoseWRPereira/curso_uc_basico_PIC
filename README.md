@@ -2,9 +2,9 @@
 
 | Aula | Montagem | Objetivo |
 |:----:|:--------:|:--------:|
-|   0  | Escopo   | Considerações gerais |
-|   1  | Pisca LED | Configurar uma saída digital |
-|   2  | Botão LED | Configurar uma entrada e uma saída digital |
+|   0  | Escopo   ||
+|   1  | Pisca LED ||
+|   2  | Botão LED ||
 |   3  | Semáforo de Veículos e pedestres ||
 |   4  | Partida Estrela-Triângulo ||
 |   5  | Display de 7 segmentos ||

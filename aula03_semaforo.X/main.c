@@ -2,7 +2,7 @@
  * File:   main.c
  * Author: josewrpereira
  *
- * Created on 20 April 2021, 20:42
+ * Created on 09 September 2021, 22:42
  * 
  * IDE:                 MPLAB X IDE v5.45
  * Compiler:            XC8 v2.31
@@ -11,21 +11,20 @@
  * Architecture:        x86-64
  * 
  * Objetivo: 
- *      Simular um sem·foro de veÌculos e de pedestre, 
- *      incluindo o bot„o para bloqueio da via e 
- *      liberaÁ„o da atravessia aos pedestres 
- *      utilizando M·quina de Estados.
+ *      Simular um sem√°foro de ve√≠culos e de pedestre, 
+ *      incluindo o bot√£o para bloqueio da via e 
+ *      libera√ß√£o da atravessia aos pedestres.
  * 
  * 
- * Pinos    |n∫     |Conex„o
- *  VDD     |11,32  | AlimentaÁ„o (Vcc/+5V)
- *  VSS     |12,31  | AlimentaÁ„o (GND/0V)
- *  RD7     |30     | LED Vermelho VeÌculos (source)
- *  RD6     |29     | LED Amarelo VeÌculos (source)
- *  RD5     |28     | LED Verde VeÌculos (source)
+ * Pinos    |n¬∫     |Conex√£o
+ *  VDD     |11,32  | Alimenta√ß√£o (Vcc/+5V)
+ *  VSS     |12,31  | Alimenta√ß√£o (GND/0V)
+ *  RD7     |30     | LED Vermelho Ve√≠culos (source)
+ *  RD6     |29     | LED Amarelo Ve√≠culos (source)
+ *  RD5     |28     | LED Verde Ve√≠culos (source)
  *  RD3     |22     | LED Vermelho Pedestres(source)
  *  RD2     |21     | LED Verde Pedestres(source)
- *  RD0     |19     | Bot„o Pulsador Pedestres (pullDown)
+ *  RD0     |19     | Bot√£o Pulsador Pedestres (pullDown)
  * 
  */
 
@@ -36,60 +35,25 @@
 
 void main(void)
 {
-    char estado = 0;
-    int tempo;
     semaforo_init();
 
     while( 1 )
     {
-        switch( estado )
+        semaforo_veiculo_verde();
+        semaforo_pedestre_vermelho();
+        if( botao_pedestre() )
         {
-            case 0:
-                    semaforo( VERDE );
-                    estado = 1;
-                    break;
-            case 1:
-                    if( botao_pedestre() )
-                        estado = 2;
-                    break;
-            case 2:
-                    tempo = 2000;
-                    estado = 3;
-                    break;
-            case 3:
-                    delay(1);
-                    --tempo;
-                    if( tempo == 0 )
-                        estado = 4;
-                    break;
-            case 4:
-                    semaforo( AMARELO );
-                    estado = 5;
-                    break;
-            case 5:
-                    tempo = 3000;
-                    estado = 6;
-                    break;
-            case 6:
-                    delay(1);
-                    --tempo;
-                    if( tempo == 0 )
-                        estado = 7;
-                    break;
-            case 7:
-                    semaforo( VERMELHO );
-                    estado = 8;
-                    break;
-            case 8:
-                    tempo = 5000;
-                    estado = 9;
-                    break;
-            case 9:
-                    delay(1);
-                    --tempo;
-                    if( tempo == 0 )
-                        estado = 0;
-                    break;
+            delay(2000);
+            semaforo_veiculo_amarelo();
+            delay(4000);
+            semaforo_veiculo_vermelho();
+            delay(1000);
+            semaforo_pedestre_verde();
+            delay(4000);    
+            semaforo_pedestre_vermelho();
+            semaforo_pedestre_vermelho_pisca();
+            semaforo_pedestre_vermelho_pisca();
+            semaforo_pedestre_vermelho_pisca();
         }
     }
 }

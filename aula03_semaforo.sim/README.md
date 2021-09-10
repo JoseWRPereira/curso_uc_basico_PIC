@@ -1,10 +1,7 @@
-# Semáforo de veículos para via simples
+# Semáforo de veículos para via simples com botão de liberação de passagem de pedestre
 
-| Figura (a): Semáforo simples |
+
+| Figura 1: Semáforo simples com botão de pedestre |
 |:------------------:|
-| ![Semáforo Simples](https://github.com/JoseWRPereira/ddp/blob/master/_posts/tUcPIC/c1-semaforo_veiculos/semaforo_veiculos.gif) |
+| ![Semáforo Simples com Botão de pedestre](https://github.com/JoseWRPereira/curso_uc_basico_PIC/blob/main/aula03_semaforo.sim/aula03_semaforo.gif) |
 
-
-| Figura (b): Semáforo simples com botão de pedestre |
-|:------------------:|
-| ![Semáforo Simples](https://github.com/JoseWRPereira/ddp/blob/master/_posts/tUcPIC/c1-semaforo_veiculos_pedestres/semaforo_veiculos_pedestres.gif) |

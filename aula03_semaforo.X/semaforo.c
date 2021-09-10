@@ -2,23 +2,24 @@
  * File:   semaforo.c
  * Author: josewrpereira
  *
- * Created on 19 April 2021, 22:05
+ * Created on 09 September 2021, 22:42
  */
 
 #include <xc.h>
 #include "semaforo.h"
+#include "delay.h"
 
 void semaforo_init( void )
 {
-        // ConfiguraÁ„o dos pinos
-    TRISDbits.TRISD7 = 0;   // SaÌda: Vermelho veÌculos
-    TRISDbits.TRISD6 = 0;   // SaÌda: Amarelo veÌculos
-    TRISDbits.TRISD5 = 0;   // SaÌda: Verde veÌculos
-    TRISDbits.TRISD3 = 0;   // SaÌda: Vermelho pedestre
-    TRISDbits.TRISD2 = 0;   // SaÌda: Verde pedestre
-    TRISDbits.TRISD0 = 1;   // Entrada: Bot„o pedestre
+        // Configura√ß√£o dos pinos
+    TRISDbits.TRISD7 = 0;   // Sa√≠da: Vermelho ve√≠culos
+    TRISDbits.TRISD6 = 0;   // Sa√≠da: Amarelo ve√≠culos
+    TRISDbits.TRISD5 = 0;   // Sa√≠da: Verde ve√≠culos
+    TRISDbits.TRISD3 = 0;   // Sa√≠da: Vermelho pedestre
+    TRISDbits.TRISD2 = 0;   // Sa√≠da: Verde pedestre
+    TRISDbits.TRISD0 = 1;   // Entrada: Bot√£o pedestre
     
-        // InicializaÁ„o do estado dos LEDs
+        // Inicializa√ß√£o do estado dos LEDs
     PORTDbits.RD7 = 0;
     PORTDbits.RD6 = 0;
     PORTDbits.RD5 = 0;
@@ -31,27 +32,40 @@ char botao_pedestre( void )
     return( PORTDbits.RD0 );
 }
 
-void semaforo( unsigned char cor )
+
+void semaforo_veiculo_verde( void )
 {
-    PORTDbits.RD2 = 0;
-    PORTDbits.RD3 = 0;
+    PORTDbits.RD7 = 0;
+    PORTDbits.RD6 = 0;
+    PORTDbits.RD5 = 1;
+}
+void semaforo_veiculo_amarelo( void )
+{
+    PORTDbits.RD7 = 0;
+    PORTDbits.RD5 = 0;
+    PORTDbits.RD6 = 1;
+}
+void semaforo_veiculo_vermelho( void )
+{
     PORTDbits.RD5 = 0;
     PORTDbits.RD6 = 0;
-    PORTDbits.RD7 = 0;
+    PORTDbits.RD7 = 1;
+}
 
-    switch( cor )
-    {
-        case VERMELHO:
-                    PORTDbits.RD7 = 1;
-                    PORTDbits.RD2 = 1;
-                    break;
-        case AMARELO:
-                    PORTDbits.RD6 = 1;
-                    PORTDbits.RD3 = 1;
-                    break;
-        case VERDE:
-                    PORTDbits.RD5 = 1;
-                    PORTDbits.RD3 = 1;
-                    break;
-    }
+void semaforo_pedestre_verde( void )
+{
+    PORTDbits.RD3 = 0;
+    PORTDbits.RD2 = 1;
+}
+void semaforo_pedestre_vermelho( void )
+{
+    PORTDbits.RD2 = 0;
+    PORTDbits.RD3 = 1;
+}
+void semaforo_pedestre_vermelho_pisca( void )
+{
+    PORTDbits.RD3 = 1;
+    delay(500);
+    PORTDbits.RD3 = 0;
+    delay(500);
 }
