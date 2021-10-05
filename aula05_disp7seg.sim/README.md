@@ -1,5 +1,5 @@
 # Display 7 segmentos Catodo Comum
 
-| Figura (a): Contagem hexadecimal |
+| Figura (a): Display 7 segmentos |
 |:------------------:|
-| ![circuito](https://github.com/JoseWRPereira/ddp/blob/master/_posts/tUcPIC/c1-disp7seg/disp7segCont.gif) |
+| ![disp7seg_incdec](https://github.com/JoseWRPereira/curso_uc_basico_PIC/blob/main/aula05_disp7seg.sim/disp7seg_incdec.gif) |
