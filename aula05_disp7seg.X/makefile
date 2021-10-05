@@ -1,4 +1,4 @@
-PROJECT=aula03_semaforo
+PROJECT=aula05_disp7seg
 CC=/opt/microchip/xc8/v2.32/bin/xc8-cc
 DEVICE=16F887
 DFP="/opt/microchip/mplabx/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8"
