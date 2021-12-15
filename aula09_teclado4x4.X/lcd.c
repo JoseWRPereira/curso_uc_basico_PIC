@@ -151,7 +151,7 @@ void lcd_clr( void )
 //**************************************************************
 // Escreve uma string na (linha,coluna) do display
 // Uso: 
-//      lcd_print(0,0,"string");
+//      LCD_print(0,0,"string");
 //
 void lcd_print( unsigned char lin, unsigned char col, const char * str )
 {

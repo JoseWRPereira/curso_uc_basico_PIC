@@ -6,11 +6,11 @@
 void main( void )
 {
     unsigned int cont;
-    LCD_init();
-    LCD_print(0,0,"Contagem:       ");
+    lcd_init();
+    lcd_print(0,0,"Contagem:       ");
     while( 1 )
     {
-        LCD_num(0,10, cont, 3 );
+        lcd_num(0,10, cont, 3 );
         delay(1000);
         ++cont;
     }

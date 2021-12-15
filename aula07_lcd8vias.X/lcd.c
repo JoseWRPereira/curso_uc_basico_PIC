@@ -55,7 +55,7 @@
 
 //**************************************************************
 // Envia uma instrução para o display (Instruction Register)
-void LCD_instReg( unsigned char i )
+void lcd_instReg( unsigned char i )
 {
     LCD_RS = 0;
     LCD_BUS = i;
@@ -73,7 +73,7 @@ void LCD_instReg( unsigned char i )
 
 //**************************************************************
 // Envia um caractere para o display (Data Register))
-void LCD_dataReg( unsigned char d )
+void lcd_dataReg( unsigned char d )
 {
     LCD_RS = 1;
     LCD_BUS = d;
@@ -86,9 +86,9 @@ void LCD_dataReg( unsigned char d )
 
 //**************************************************************
 // Posicionar o cursor na coordenada: (linha, coluna)
-void LCD_lincol( unsigned char lin, unsigned char col)
+void lcd_lincol( unsigned char lin, unsigned char col)
 {
-    LCD_instReg( LCD_SET_DDRAM_ADDRS( (LCD_ADDR_LINE_1 * lin) + (col + LCD_ADDR_LINE_0) ) );
+    lcd_instReg( LCD_SET_DDRAM_ADDRS( (LCD_ADDR_LINE_1 * lin) + (col + LCD_ADDR_LINE_0) ) );
 }
 
 
@@ -96,7 +96,7 @@ void LCD_lincol( unsigned char lin, unsigned char col)
 //**************************************************************
 // Inicializa os pinos conectados ao display e em seguida
 // o proprio display
-void LCD_init( void )
+void lcd_init( void )
 {
     delay(100);
     TRISDbits.TRISD0 = 0;   // D0
@@ -114,10 +114,10 @@ void LCD_init( void )
 
     delay(100);
     LCD_EN = 1;
-    LCD_instReg( LCD_FUNCTION_SET|LCD_FS_DATA_LENGTH_8|LCD_FS_LINE_NUMBER_2 );
-    LCD_instReg( LCD_DISPLAY_CONTROL|LCD_DC_DISPLAY_ON|LCD_DC_CURSOR_OFF|LCD_DC_BLINK_OFF );
-    LCD_instReg( LCD_CLEAR_DISPLAY );
-    LCD_instReg( LCD_RETURN_HOME );
+    lcd_instReg( LCD_FUNCTION_SET|LCD_FS_DATA_LENGTH_8|LCD_FS_LINE_NUMBER_2 );
+    lcd_instReg( LCD_DISPLAY_CONTROL|LCD_DC_DISPLAY_ON|LCD_DC_CURSOR_OFF|LCD_DC_BLINK_OFF );
+    lcd_instReg( LCD_CLEAR_DISPLAY );
+    lcd_instReg( LCD_RETURN_HOME );
     delay(100);
 }
 
@@ -125,9 +125,9 @@ void LCD_init( void )
 
 //**************************************************************
 // Apaga todos os caracteres no display
-void LCD_clr( void )
+void lcd_clr( void )
 {
-    LCD_instReg(LCD_CLEAR_DISPLAY);
+    lcd_instReg(LCD_CLEAR_DISPLAY);
 }
 
 
@@ -135,16 +135,16 @@ void LCD_clr( void )
 //**************************************************************
 // Escreve uma string na (linha,coluna) do display
 // Uso: 
-//      LCD_print(0,0,"string");
+//      lcd_print(0,0,"string");
 //
-void LCD_print( unsigned char lin, unsigned char col, const char * str )
+void lcd_print( unsigned char lin, unsigned char col, const char * str )
 {
     char pos = col;
-    LCD_lincol( lin, col );
+    lcd_lincol( lin, col );
 
     while( *str )
     {
-        LCD_dataReg( *str );
+        lcd_dataReg( *str );
         ++str;
         ++pos;
     }
@@ -154,12 +154,12 @@ void LCD_print( unsigned char lin, unsigned char col, const char * str )
 //**************************************************************
 // Escreve um número inteiro no display
 // Uso: 
-//      LCD_num( 0, 0, var, 3 );
+//      lcd_num( 0, 0, var, 3 );
 //
 // Obs: O 3 significa o número de espaços usados no display para 
 // a impressão da variavel var.
 //
-void LCD_num(  unsigned char lin, unsigned char col,
+void lcd_num(  unsigned char lin, unsigned char col,
                     int num, unsigned char tam )
 {
     int div;
@@ -170,7 +170,7 @@ void LCD_num(  unsigned char lin, unsigned char col,
     if( sinal )
         num = (~num) + 1;
 
-    LCD_lincol(lin, col);
+    lcd_lincol(lin, col);
    
     div=10000;
     size = 5;
@@ -185,19 +185,18 @@ void LCD_num(  unsigned char lin, unsigned char col,
 
     while( tam > (size+sinal) && tam > 1 )
     {
-        LCD_dataReg(' ');
+        lcd_dataReg(' ');
         --tam;
     }  
 
     if( sinal )
-        LCD_dataReg('-');
+        lcd_dataReg('-');
  
     do
     {
-        LCD_dataReg( (unsigned char)(num / div) + '0' );
+        lcd_dataReg( (unsigned char)(num / div) + '0' );
         num = num % div;
         div/=10;
     }
     while( div >= 1 );
 }
-
