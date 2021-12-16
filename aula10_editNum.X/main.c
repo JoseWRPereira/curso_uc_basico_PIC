@@ -16,7 +16,7 @@ void main( void )
     {   
         string[7] = teclado();
         lcd_print(0,0, string );
-        edit( &num, string[7] );
+        edit( &num, string[7], '*', 'D', 0, 20000  );
         lcd_num(1,0, num, 6 );
     }
 }
