@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Dec  6 21:38:11 2021
+# Make data base, printed on Wed Feb  2 00:18:14 2022
 
 # Variables
 
@@ -17,9 +17,9 @@ GDK_BACKEND = x11
 # environment
 LC_ALL = C
 # environment
-I3SOCK = /run/user/1000/i3/ipc-socket.1971
+I3SOCK = /run/user/1000/i3/ipc-socket.1935
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-65fa86e3-dafd-4c40-8638-da6561a82b59.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b6d6b3df-732c-4704-aae4-5c195a29acff.sock
 # environment
 VSCODE_CWD = /home/josewrpereira
 # environment
@@ -49,7 +49,7 @@ VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/josewrpereira/.config/Code/CachedData/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247
+VSCODE_CODE_CACHE_PATH = /home/josewrpereira/.config/Code/CachedData/899d46d82c4c95423fb7e10e68eba52050e30ba3
 # environment
 LANG = C
 # environment
@@ -71,7 +71,7 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-hcKeXvYfOnPw/agent.1971
+SSH_AUTH_SOCK = /tmp/ssh-P5TyPnpt0rQ0/agent.1935
 # default
 .SHELLFLAGS := -c
 # automatic
@@ -87,7 +87,7 @@ MAKEFILE_LIST :=
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 4865
+VSCODE_PID = 5692
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -101,7 +101,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"380db1fe12d3bd1863654966ec39d824.pt-br","_translationsConfigFile":"/home/josewrpereira/.config/Code/clp/380db1fe12d3bd1863654966ec39d824.pt-br/tcf.json","_cacheRoot":"/home/josewrpereira/.config/Code/clp/380db1fe12d3bd1863654966ec39d824.pt-br","_resolvedLanguagePackCoreLocation":"/home/josewrpereira/.config/Code/clp/380db1fe12d3bd1863654966ec39d824.pt-br/ccbaa2d27e38e5afa3e5c21c1c7bef4657064247","_corruptedFile":"/home/josewrpereira/.config/Code/clp/380db1fe12d3bd1863654966ec39d824.pt-br/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"6e345420e921ce36c9499bf33469dca7.pt-br","_translationsConfigFile":"/home/josewrpereira/.config/Code/clp/6e345420e921ce36c9499bf33469dca7.pt-br/tcf.json","_cacheRoot":"/home/josewrpereira/.config/Code/clp/6e345420e921ce36c9499bf33469dca7.pt-br","_resolvedLanguagePackCoreLocation":"/home/josewrpereira/.config/Code/clp/6e345420e921ce36c9499bf33469dca7.pt-br/899d46d82c4c95423fb7e10e68eba52050e30ba3","_corruptedFile":"/home/josewrpereira/.config/Code/clp/6e345420e921ce36c9499bf33469dca7.pt-br/corrupted.info","_languagePackSupport":true}
 # environment
 BREAKPAD_DUMP_LOCATION = /home/josewrpereira/.config/Code/exthost Crash Reports
 # default
@@ -167,7 +167,7 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-SSH_AGENT_PID = 2028
+SSH_AGENT_PID = 1992
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -185,7 +185,7 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-b6c09ef6-1.62.3-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-b6c09ef6-1.63.2-main.sock
 # environment
 XDG_SESSION_ID = 2
 # default
@@ -213,9 +213,9 @@ GDMSESSION = i3
 
 # Directories
 
-# . (device 2067, inode 12846350): 30 files, no impossibilities.
+# . (device 2051, inode 12846350): 35 files, no impossibilities.
 
-# 30 files, no impossibilities in 1 directories.
+# 35 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -265,12 +265,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 38 / storage = 634 B / avg = 16 B
-# current buf: size = 8162 B / used = 634 B / count = 38 / avg = 16 B
+# strcache buffers: 1 (0) / strings = 43 / storage = 711 B / avg = 16 B
+# current buf: size = 8162 B / used = 711 B / count = 43 / avg = 16 B
 
-# strcache performance: lookups = 41 / hit rate = 7%
+# strcache performance: lookups = 46 / hit rate = 6%
 # hash-table stats:
-# Load=38/8192=0%, Rehash=0, Collisions=0/41=0%
-# Finished Make data base on Mon Dec  6 21:38:11 2021
+# Load=43/8192=1%, Rehash=0, Collisions=0/46=0%
+# Finished Make data base on Wed Feb  2 00:18:14 2022
 
  
