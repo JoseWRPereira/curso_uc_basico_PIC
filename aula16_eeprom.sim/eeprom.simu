@@ -1,0 +1,42 @@
+<circuit noLinAcc="5" noLinStep="10" animate="1" reactStep="50" type="simulide_0.1" speed="1000000">
+ 
+Hd44780-17: 
+<item itemtype="Hd44780" y="-372" x="-492" vflip="1" Show_id="true" rotation="0" labely="-82" objectName="Hd44780-17" labelx="70" valLabelx="0" Cols="16" labelrot="0" hflip="1" valLabRot="0" id="LCD (Hd44780)" valLabely="0" Rows="2"/>
+ 
+pic16f887-16: 
+<item valLabRot="0" x="-572" vflip="1" rotation="0" Logic_Symbol="false" Ser_Monitor="false" labelrot="0" labelx="-2" y="-420" labely="-14" Program="../aula13_timer0.X/dist/default/production/aula13_timer0.hex" valLabelx="0" Ser_Port="false" itemtype="PIC" valLabely="0" Show_id="true" objectName="pic16f887-16" id="PIC16F887" Mhz="4" eeprom="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" hflip="1"/>
+ 
+Ground-8: 
+<item itemtype="Ground" y="-348" x="-468" vflip="1" Show_id="false" rotation="0" labely="8" objectName="Ground-8" labelx="-16" valLabelx="0" labelrot="0" hflip="1" valLabRot="0" id="Ground-32" valLabely="0"/>
+ 
+TextComponent-7: 
+<item valLabRot="0" x="-260" vflip="1" rotation="0" Text="uC     LCD  &#xa;---------------&#xa;D7       D7&#xa;D6       D6&#xa;D5       D5&#xa;D4       D4&#xa;D3       EN&#xa;D2       RS" Margin="5" labelrot="0" labelx="-16" Border="1" y="-436" labely="-24" valLabelx="0" Fixed_Width="false" Font_Size="10" itemtype="TextComponent" valLabely="0" Font="Helvetica [Cronyx]" Show_id="false" objectName="TextComponent-7" id="TextComponent-40" hflip="1"/>
+ 
+Connector-25: 
+<item valLabRot="0" x="-468" vflip="1" rotation="0" startpinid="Hd44780-17-PinRW" labelrot="0" labelx="-16" y="-364" labely="-24" valLabelx="0" pointList="-468,-364,-468,-364" enodeid="Circ_eNode-26" itemtype="Connector" valLabely="0" endpinid="Ground-8-Gnd" Show_id="false" objectName="Connector-25" id="Connector-18" hflip="1"/>
+ 
+Connector-43: 
+<item valLabRot="0" x="-516" vflip="1" rotation="0" startpinid="pic16f887-16-RD2" labelrot="0" labelx="-16" y="-260" labely="-24" valLabelx="0" pointList="-516,-260,-476,-260,-476,-364" enodeid="Circ_eNode-44" itemtype="Connector" valLabely="0" endpinid="Hd44780-17-PinRS" Show_id="false" objectName="Connector-43" id="Connector-73" hflip="1"/>
+ 
+Connector-45: 
+<item valLabRot="0" x="-516" vflip="1" rotation="0" startpinid="pic16f887-16-RD3" labelrot="0" labelx="-16" y="-268" labely="-24" valLabelx="0" pointList="-516,-268,-460,-268,-460,-364" enodeid="Circ_eNode-46" itemtype="Connector" valLabely="0" endpinid="Hd44780-17-PinEn" Show_id="false" objectName="Connector-45" id="Connector-74" hflip="1"/>
+ 
+Connector-47: 
+<item valLabRot="0" x="-516" vflip="1" rotation="0" startpinid="pic16f887-16-RD4" labelrot="0" labelx="-16" y="-308" labely="-24" valLabelx="0" pointList="-516,-308,-420,-308,-420,-364" enodeid="Circ_eNode-48" itemtype="Connector" valLabely="0" endpinid="Hd44780-17-dataPin4" Show_id="false" objectName="Connector-47" id="Connector-75" hflip="1"/>
+ 
+Connector-49: 
+<item valLabRot="0" x="-516" vflip="1" rotation="0" startpinid="pic16f887-16-RD5" labelrot="0" labelx="-16" y="-316" labely="-24" valLabelx="0" pointList="-516,-316,-412,-316,-412,-364" enodeid="Circ_eNode-50" itemtype="Connector" valLabely="0" endpinid="Hd44780-17-dataPin5" Show_id="false" objectName="Connector-49" id="Connector-76" hflip="1"/>
+ 
+Connector-51: 
+<item valLabRot="0" x="-516" vflip="1" rotation="0" startpinid="pic16f887-16-RD6" labelrot="0" labelx="-16" y="-324" labely="-24" valLabelx="0" pointList="-516,-324,-404,-324,-404,-364" enodeid="Circ_eNode-52" itemtype="Connector" valLabely="0" endpinid="Hd44780-17-dataPin6" Show_id="false" objectName="Connector-51" id="Connector-77" hflip="1"/>
+ 
+Connector-53: 
+<item valLabRot="0" x="-516" vflip="1" rotation="0" startpinid="pic16f887-16-RD7" labelrot="0" labelx="-16" y="-332" labely="-24" valLabelx="0" pointList="-516,-332,-396,-332,-396,-364" enodeid="Circ_eNode-54" itemtype="Connector" valLabely="0" endpinid="Hd44780-17-dataPin7" Show_id="false" objectName="Connector-53" id="Connector-78" hflip="1"/>
+ 
+PlotterWidget-71: 
+<item sizeHint="" pos="" cursor="" whatsThis="" locale="" autoFillBackground="false" toolTipDuration="-1" palette="" font="Sans Serif,9,-1,5,50,0,0,0,0,0" geometry="" windowIconText="" focus="false" visible="false" objectName="PlotterWidget-71" isActiveWindow="false" baseSize="" maximumHeight="200" styleSheet="" rect="" maximized="false" size="" enabled="true" frameSize="" maximumSize="" childrenRect="" MaxVolt="500" windowModified="false" height="200" windowOpacity="1" statusTip="" windowFilePath="" minimumWidth="200" minimumSizeHint="" minimumHeight="200" childrenRegion="" maximumWidth="1000" contextMenuPolicy="1" layoutDirection="0" sizeIncrement="" normalGeometry="" width="200" inputMethodHints="0" fullScreen="false" Scale="1" sizePolicy="" windowIcon="" y="0" Tracks="1" windowTitle="" itemtype="Plotter" windowModality="0" accessibleName="" MinVolt="-500" acceptDrops="false" x="0" minimized="false" minimumSize="" updatesEnabled="true" toolTip="" mouseTracking="false" focusPolicy="0" accessibleDescription="" modal="false" frameGeometry=""/>
+ 
+SerialPortWidget-72: 
+<item sizeHint="" SettingsProp=",0,3,0,0,0" pos="" cursor="" whatsThis="" locale="" autoFillBackground="false" toolTipDuration="-1" palette="" font="Sans Serif,9,-1,5,50,0,0,0,0,0" geometry="" windowIconText="" focus="false" visible="false" objectName="SerialPortWidget-72" isActiveWindow="false" baseSize="" maximumHeight="170" styleSheet="" rect="" maximized="false" size="" enabled="true" frameSize="" maximumSize="" childrenRect="" windowModified="false" height="141" windowOpacity="1" statusTip="" windowFilePath="" minimumWidth="0" minimumSizeHint="" minimumHeight="0" childrenRegion="" maximumWidth="450" contextMenuPolicy="1" layoutDirection="0" sizeIncrement="" normalGeometry="" width="313" inputMethodHints="0" fullScreen="false" sizePolicy="" windowIcon="" y="0" windowTitle="Settings" itemtype="SerialPort" windowModality="0" accessibleName="" acceptDrops="false" x="0" minimized="false" minimumSize="" updatesEnabled="true" toolTip="" mouseTracking="false" focusPolicy="0" accessibleDescription="" modal="false" frameGeometry=""/>
+ 
+</circuit>
