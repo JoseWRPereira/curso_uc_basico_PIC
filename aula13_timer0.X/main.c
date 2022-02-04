@@ -3,14 +3,13 @@
 #include "lcd.h"
 #include "timer0.h"
 
-// #define COUNTER
-//#define DELAY
+// #define DELAY
 
 void main( void )
 {
     lcd_init();
 
-#ifdef COUNTER
+#ifdef COUNTER0
 
     lcd_print(0,0,"Count0");
     counter0_start();

@@ -1,24 +1,8 @@
 #include <xc.h>
 #include "timer0.h"
+
+#ifndef COUNTER0
 #include "delay.h"
-
-void counter0_start( void )
-{
-    TRISAbits.TRISA4 = 1;
-    TMR0 = 0; 
-    OPTION_REGbits.PSA = 1;
-    OPTION_REGbits.T0SE = 0;
-    OPTION_REGbits.T0CS = 1; 
-}
-void counter0_reset( void )
-{
-    TMR0 = 0;
-}
-int counter0( void )
-{
-    return( (int)TMR0 );
-}
-
 
 void timer0_start( unsigned char prescaler, unsigned char count )
 {
@@ -48,3 +32,26 @@ void timer0_delay_ms( unsigned int t )
         --t;
     }
 }
+#endif
+
+
+
+
+#ifdef COUNTER0
+void counter0_start( void )
+{
+    TRISAbits.TRISA4 = 1;
+    TMR0 = 0; 
+    OPTION_REGbits.PSA = 1;
+    OPTION_REGbits.T0SE = 0;
+    OPTION_REGbits.T0CS = 1; 
+}
+void counter0_reset( void )
+{
+    TMR0 = 0;
+}
+int counter0( void )
+{
+    return( (int)TMR0 );
+}
+#endif
