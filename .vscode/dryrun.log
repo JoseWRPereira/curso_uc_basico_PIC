@@ -1,6 +1,6 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/josewrpereira/web/curso_uc_basico_PIC'
 make: Leaving directory '/home/josewrpereira/web/curso_uc_basico_PIC'
  
 make: *** No targets specified and no makefile found.  Stop.
- 
+

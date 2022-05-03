@@ -1,6 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target 'all'.  Stop.
- 
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Feb  2 02:38:01 2022
+# Make data base, printed on Fri Apr 29 07:46:44 2022
 
 # Variables
 
@@ -17,9 +17,9 @@ GDK_BACKEND = x11
 # environment
 LC_ALL = C
 # environment
-I3SOCK = /run/user/1000/i3/ipc-socket.1935
+I3SOCK = /run/user/1000/i3/ipc-socket.1846
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b6d6b3df-732c-4704-aae4-5c195a29acff.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-bf21dbd3-424c-43d5-a5ec-ef97b388cb1a.sock
 # environment
 VSCODE_CWD = /home/josewrpereira
 # environment
@@ -49,7 +49,7 @@ VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/josewrpereira/.config/Code/CachedData/899d46d82c4c95423fb7e10e68eba52050e30ba3
+VSCODE_CODE_CACHE_PATH = /home/josewrpereira/.config/Code/CachedData/dfd34e8260c270da74b5c2d86d61aee4b6d56977
 # environment
 LANG = C
 # environment
@@ -65,19 +65,17 @@ CURDIR := /home/josewrpereira/web/curso_uc_basico_PIC
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-P5TyPnpt0rQ0/agent.1935
+SSH_AUTH_SOCK = /tmp/ssh-0ePqbq329L8T/agent.1846
 # default
 .SHELLFLAGS := -c
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
-# environment
-VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=d92c1004-7b46-4772-9b9f-2fa80f27a8ac&iid=d92c1004-7b46-4772-9b9f-2fa80f27a8ac&sid=d92c1004-7b46-4772-9b9f-2fa80f27a8ac","uploadToServer":true}
 # environment
 XDG_SESSION_DESKTOP = i3
 # makefile
@@ -87,7 +85,7 @@ MAKEFILE_LIST :=
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 5692
+VSCODE_PID = 5600
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -101,9 +99,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"6e345420e921ce36c9499bf33469dca7.pt-br","_translationsConfigFile":"/home/josewrpereira/.config/Code/clp/6e345420e921ce36c9499bf33469dca7.pt-br/tcf.json","_cacheRoot":"/home/josewrpereira/.config/Code/clp/6e345420e921ce36c9499bf33469dca7.pt-br","_resolvedLanguagePackCoreLocation":"/home/josewrpereira/.config/Code/clp/6e345420e921ce36c9499bf33469dca7.pt-br/899d46d82c4c95423fb7e10e68eba52050e30ba3","_corruptedFile":"/home/josewrpereira/.config/Code/clp/6e345420e921ce36c9499bf33469dca7.pt-br/corrupted.info","_languagePackSupport":true}
-# environment
-BREAKPAD_DUMP_LOCATION = /home/josewrpereira/.config/Code/exthost Crash Reports
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"44227f601049c951edcdcbe90dfef21e.pt-br","_translationsConfigFile":"/home/josewrpereira/.config/Code/clp/44227f601049c951edcdcbe90dfef21e.pt-br/tcf.json","_cacheRoot":"/home/josewrpereira/.config/Code/clp/44227f601049c951edcdcbe90dfef21e.pt-br","_resolvedLanguagePackCoreLocation":"/home/josewrpereira/.config/Code/clp/44227f601049c951edcdcbe90dfef21e.pt-br/dfd34e8260c270da74b5c2d86d61aee4b6d56977","_corruptedFile":"/home/josewrpereira/.config/Code/clp/44227f601049c951edcdcbe90dfef21e.pt-br/corrupted.info","_languagePackSupport":true}
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # makefile
@@ -153,7 +149,7 @@ CLUTTER_IM_MODULE = ibus
 # environment
 LOGNAME = josewrpereira
 # environment
-PLATFORMIO_PATH = /home/josewrpereira/.platformio/penv/bin:/home/josewrpereira/.platformio/penv:/home/josewrpereira/.platformio/python3/bin:/home/josewrpereira/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin:/home/josewrpereira/.rvm/bin
+PLATFORMIO_PATH = /home/josewrpereira/.platformio/python3/bin:/home/josewrpereira/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin:/home/josewrpereira/.rvm/bin
 # environment
 XDG_VTNR = 2
 # makefile
@@ -167,7 +163,7 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-SSH_AGENT_PID = 1992
+SSH_AGENT_PID = 1903
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -175,9 +171,9 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 XDG_SESSION_CLASS = user
 # environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-PLATFORMIO_IDE = 2.4.0
+PLATFORMIO_IDE = 2.4.3
 # environment
 HOME = /home/josewrpereira
 # environment
@@ -185,7 +181,7 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-b6c09ef6-1.63.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-b6c09ef6-1.66.2-main.sock
 # environment
 XDG_SESSION_ID = 2
 # default
@@ -205,7 +201,7 @@ PHANTOMJS_ARCH = x64
 # environment
 GDMSESSION = i3
 # variable set hash-table stats:
-# Load=96/1024=9%, Rehash=0, Collisions=8/123=7%
+# Load=94/1024=9%, Rehash=0, Collisions=7/121=6%
 
 # Pattern-specific Variable Values
 
@@ -213,9 +209,9 @@ GDMSESSION = i3
 
 # Directories
 
-# . (device 2051, inode 12846350): 36 files, no impossibilities.
+# . (device 2051, inode 12846350): 40 files, no impossibilities.
 
-# 36 files, no impossibilities in 1 directories.
+# 40 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -265,12 +261,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 44 / storage = 727 B / avg = 16 B
-# current buf: size = 8162 B / used = 727 B / count = 44 / avg = 16 B
+# strcache buffers: 1 (0) / strings = 48 / storage = 788 B / avg = 16 B
+# current buf: size = 8162 B / used = 788 B / count = 48 / avg = 16 B
 
-# strcache performance: lookups = 47 / hit rate = 6%
+# strcache performance: lookups = 51 / hit rate = 5%
 # hash-table stats:
-# Load=44/8192=1%, Rehash=0, Collisions=0/47=0%
-# Finished Make data base on Wed Feb  2 02:38:01 2022
+# Load=48/8192=1%, Rehash=0, Collisions=0/51=0%
+# Finished Make data base on Fri Apr 29 07:46:44 2022
 
  

@@ -1,0 +1,414 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production/aula18_eusart.o
+cinit CODE 0 F F 12 2
+text1 CODE 0 D7 D7 2D 2
+text2 CODE 0 172 172 13 2
+text3 CODE 0 104 104 2C 2
+text4 CODE 0 98 98 3F 2
+text5 CODE 0 21 21 77 2
+text6 CODE 0 14A 14A 15 2
+text7 CODE 0 185 185 13 2
+text8 CODE 0 1A9 1A9 1 2
+maintext CODE 0 130 130 1A 2
+cstackCOMMON COMMON 1 70 70 C 1
+cstackBANK0 BANK0 1 31 31 2 1
+inittext CODE 0 15F 15F 13 2
+intentry CODE 0 4 4 8 2
+idataBANK0 CODE 0 198 198 11 2
+dataBANK0 BANK0 1 20 20 11 1
+config CONFIG 4 2007 2007 2 2
+$/tmp/xcXhjeJBE.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 C C 3 2
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 33-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 33-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 1AA-1FFF 2
+ENTRY 3-3 2
+ENTRY 1AA-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 1AA-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7C-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 1AA-1FFF 2
+STRING 3-3 2
+STRING 1AA-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/aula18_eusart.o
+F cinit CODE >1108:/tmp/xcXGlAMpB.s
+F cinit CODE >1111:/tmp/xcXGlAMpB.s
+F cinit CODE >1152:/tmp/xcXGlAMpB.s
+10 cinit CODE >1153:/tmp/xcXGlAMpB.s
+11 cinit CODE >1154:/tmp/xcXGlAMpB.s
+12 cinit CODE >1155:/tmp/xcXGlAMpB.s
+13 cinit CODE >1156:/tmp/xcXGlAMpB.s
+14 cinit CODE >1157:/tmp/xcXGlAMpB.s
+15 cinit CODE >1158:/tmp/xcXGlAMpB.s
+16 cinit CODE >1159:/tmp/xcXGlAMpB.s
+17 cinit CODE >1160:/tmp/xcXGlAMpB.s
+18 cinit CODE >1161:/tmp/xcXGlAMpB.s
+1D cinit CODE >1167:/tmp/xcXGlAMpB.s
+1D cinit CODE >1169:/tmp/xcXGlAMpB.s
+1E cinit CODE >1170:/tmp/xcXGlAMpB.s
+4 intentry CODE >5:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/interrupt.c
+1A9 text8 CODE >158:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/eusart.c
+1A9 text8 CODE >161:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/eusart.c
+185 text7 CODE >5:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/interrupt.c
+185 text7 CODE >7:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/interrupt.c
+18B text7 CODE >9:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/interrupt.c
+191 text7 CODE >11:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/interrupt.c
+14A text6 CODE >12:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/delay.c
+14A text6 CODE >14:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/delay.c
+14B text6 CODE >16:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/delay.c
+152 text6 CODE >17:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/delay.c
+155 text6 CODE >17:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/delay.c
+158 text6 CODE >14:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/delay.c
+15E text6 CODE >19:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/delay.c
+21 text5 CODE >70:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+22 text5 CODE >72:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+25 text5 CODE >73:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+28 text5 CODE >73:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+2B text5 CODE >73:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+34 text5 CODE >75:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+35 text5 CODE >76:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+40 text5 CODE >77:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+4A text5 CODE >79:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+4E text5 CODE >80:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+51 text5 CODE >83:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+5A text5 CODE >85:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+5B text5 CODE >86:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+5E text5 CODE >86:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+61 text5 CODE >86:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+6A text5 CODE >87:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+6B text5 CODE >88:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+6F text5 CODE >89:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+72 text5 CODE >92:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+73 text5 CODE >93:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+7A text5 CODE >94:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+7B text5 CODE >95:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+86 text5 CODE >96:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+90 text5 CODE >98:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+94 text5 CODE >99:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+97 text5 CODE >100:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+98 text4 CODE >133:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+98 text4 CODE >135:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+A1 text4 CODE >139:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+A4 text4 CODE >140:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+A5 text4 CODE >141:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+A6 text4 CODE >142:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+A7 text4 CODE >143:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+A8 text4 CODE >144:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+A9 text4 CODE >157:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+B2 text4 CODE >158:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+B5 text4 CODE >159:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+BB text4 CODE >160:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+C1 text4 CODE >161:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+C7 text4 CODE >162:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+CD text4 CODE >163:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+D6 text4 CODE >164:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+104 text3 CODE >105:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+105 text3 CODE >107:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+108 text3 CODE >108:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+10B text3 CODE >108:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+10E text3 CODE >108:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+117 text3 CODE >109:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+118 text3 CODE >110:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+11C text3 CODE >111:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+11F text3 CODE >113:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+120 text3 CODE >114:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+127 text3 CODE >115:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+128 text3 CODE >116:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+12C text3 CODE >117:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+12F text3 CODE >118:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+172 text2 CODE >123:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+173 text2 CODE >125:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+176 text2 CODE >125:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+179 text2 CODE >125:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+184 text2 CODE >126:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+D7 text1 CODE >182:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+DA text1 CODE >184:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+DE text1 CODE >185:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+E8 text1 CODE >187:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+E9 text1 CODE >189:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+F1 text1 CODE >190:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+F5 text1 CODE >191:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+FB text1 CODE >187:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+103 text1 CODE >193:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/lcd.c
+130 maintext CODE >7:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/main.c
+130 maintext CODE >9:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/main.c
+135 maintext CODE >14:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/main.c
+13B maintext CODE >15:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/main.c
+146 maintext CODE >16:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/main.c
+146 maintext CODE >21:/home/josewrpereira/web/curso_uc_basico_PIC/aula18_eusart.X/main.c
+15F inittext CODE >1126:/tmp/xcXGlAMpB.s
+15F inittext CODE >1127:/tmp/xcXGlAMpB.s
+160 inittext CODE >1128:/tmp/xcXGlAMpB.s
+161 inittext CODE >1129:/tmp/xcXGlAMpB.s
+162 inittext CODE >1130:/tmp/xcXGlAMpB.s
+163 inittext CODE >1137:/tmp/xcXGlAMpB.s
+163 inittext CODE >1138:/tmp/xcXGlAMpB.s
+168 inittext CODE >1139:/tmp/xcXGlAMpB.s
+169 inittext CODE >1140:/tmp/xcXGlAMpB.s
+16A inittext CODE >1141:/tmp/xcXGlAMpB.s
+16B inittext CODE >1142:/tmp/xcXGlAMpB.s
+16C inittext CODE >1143:/tmp/xcXGlAMpB.s
+16D inittext CODE >1144:/tmp/xcXGlAMpB.s
+16E inittext CODE >1145:/tmp/xcXGlAMpB.s
+16F inittext CODE >1146:/tmp/xcXGlAMpB.s
+170 inittext CODE >1147:/tmp/xcXGlAMpB.s
+171 inittext CODE >1148:/tmp/xcXGlAMpB.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production/aula18_eusart.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 1AA 0 ABS 0 - -
+__Hspace_1 7C 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+_lcd_lincol 2E4 0 CODE 0 text2 dist/default/production/aula18_eusart.o
+delay@t 72 0 COMMON 1 cstackCOMMON dist/default/production/aula18_eusart.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack /tmp/xcXhjeJBE.o
+_main 260 0 CODE 0 maintext dist/default/production/aula18_eusart.o
+btemp 7E 0 ABS 0 - dist/default/production/aula18_eusart.o
+start 18 0 CODE 0 init /tmp/xcXhjeJBE.o
+__size_of_main 0 0 ABS 0 - dist/default/production/aula18_eusart.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__end_of_RX_int 354 0 CODE 0 text8 dist/default/production/aula18_eusart.o
+__Hpowerup 0 0 CODE 0 powerup -
+_lcd_instReg 42 0 CODE 0 text5 dist/default/production/aula18_eusart.o
+__end_of_lcd_print 208 0 CODE 0 text1 dist/default/production/aula18_eusart.o
+intlevel0 0 0 ENTRY 0 functab /tmp/xcXhjeJBE.o
+intlevel1 0 0 ENTRY 0 functab /tmp/xcXhjeJBE.o
+intlevel2 0 0 ENTRY 0 functab /tmp/xcXhjeJBE.o
+intlevel3 0 0 ENTRY 0 functab /tmp/xcXhjeJBE.o
+intlevel4 0 0 ENTRY 0 functab /tmp/xcXhjeJBE.o
+intlevel5 0 0 ENTRY 0 functab /tmp/xcXhjeJBE.o
+__size_of_lcd_print 0 0 ABS 0 - dist/default/production/aula18_eusart.o
+wtemp0 7E 0 ABS 0 - dist/default/production/aula18_eusart.o
+__Hfunctab 0 0 ENTRY 0 functab -
+lcd_lincol@col 75 0 COMMON 1 cstackCOMMON dist/default/production/aula18_eusart.o
+lcd_lincol@lin 77 0 COMMON 1 cstackCOMMON dist/default/production/aula18_eusart.o
+__end_of_lcd_lincol 30A 0 CODE 0 text2 dist/default/production/aula18_eusart.o
+__size_of_lcd_dataReg 0 0 ABS 0 - dist/default/production/aula18_eusart.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_lcd_print 1AE 0 CODE 0 text1 dist/default/production/aula18_eusart.o
+lcd_print@col 78 0 COMMON 1 cstackCOMMON dist/default/production/aula18_eusart.o
+lcd_print@lin 32 0 BANK0 1 cstackBANK0 dist/default/production/aula18_eusart.o
+lcd_print@pos 31 0 BANK0 1 cstackBANK0 dist/default/production/aula18_eusart.o
+lcd_print@str 79 0 COMMON 1 cstackCOMMON dist/default/production/aula18_eusart.o
+__Lmaintext 0 0 ABS 0 maintext -
+lcd_dataReg@d 74 0 COMMON 1 cstackCOMMON dist/default/production/aula18_eusart.o
+___stackhi 0 0 ABS 0 - /tmp/xcXhjeJBE.o
+___stacklo 0 0 ABS 0 - /tmp/xcXhjeJBE.o
+_BAUDCTLbits 187 0 ABS 0 - dist/default/production/aula18_eusart.o
+__size_of_delay 0 0 ABS 0 - dist/default/production/aula18_eusart.o
+start_initialization 1E 0 CODE 0 cinit dist/default/production/aula18_eusart.o
+_TRISDbits 88 0 ABS 0 - dist/default/production/aula18_eusart.o
+_RX_int 352 0 CODE 0 text8 dist/default/production/aula18_eusart.o
+__pcstackBANK0 31 0 BANK0 1 cstackBANK0 dist/default/production/aula18_eusart.o
+lcd_instReg@i 74 0 COMMON 1 cstackCOMMON dist/default/production/aula18_eusart.o
+___int_sp 0 0 STACK 2 stack /tmp/xcXhjeJBE.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 42 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__size_of_lcd_init 0 0 ABS 0 - dist/default/production/aula18_eusart.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 1E 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+_SPBRbits 99 0 ABS 0 - dist/default/production/aula18_eusart.o
+__size_of_RX_int 0 0 ABS 0 - dist/default/production/aula18_eusart.o
+__Linittext 0 0 ABS 0 inittext -
+_PORTDbits 8 0 ABS 0 - dist/default/production/aula18_eusart.o
+_INTCONbits B 0 ABS 0 - dist/default/production/aula18_eusart.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 18 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 18 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__size_of_lcd_lincol 0 0 ABS 0 - dist/default/production/aula18_eusart.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 1AA 0 ABS 0 - -
+__S1 7C 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_isr 30A 0 CODE 0 text7 dist/default/production/aula18_eusart.o
+_str 20 0 BANK0 1 dataBANK0 dist/default/production/aula18_eusart.o
+_lcd_dataReg 208 0 CODE 0 text3 dist/default/production/aula18_eusart.o
+saved_w 7E 0 ABS 0 - dist/default/production/aula18_eusart.o
+__end_of_lcd_instReg 130 0 CODE 0 text5 dist/default/production/aula18_eusart.o
+__end_of_isr 330 0 CODE 0 text7 dist/default/production/aula18_eusart.o
+_lcd_init 130 0 CODE 0 text4 dist/default/production/aula18_eusart.o
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec /tmp/xcXhjeJBE.o
+__pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production/aula18_eusart.o
+__end_of_lcd_init 1AE 0 CODE 0 text4 dist/default/production/aula18_eusart.o
+_RCSTAbits 18 0 ABS 0 - dist/default/production/aula18_eusart.o
+_PIE1bits 8C 0 ABS 0 - dist/default/production/aula18_eusart.o
+__pmaintext 260 0 CODE 0 maintext dist/default/production/aula18_eusart.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+init_fetch0 2BE 0 CODE 0 inittext dist/default/production/aula18_eusart.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_PIR1bits C 0 ABS 0 - dist/default/production/aula18_eusart.o
+__Lend_init 18 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 3A 0 CODE 0 cinit dist/default/production/aula18_eusart.o
+__Hintentry 18 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__ptext1 1AE 0 CODE 0 text1 dist/default/production/aula18_eusart.o
+__ptext2 2E4 0 CODE 0 text2 dist/default/production/aula18_eusart.o
+__ptext3 208 0 CODE 0 text3 dist/default/production/aula18_eusart.o
+__ptext4 130 0 CODE 0 text4 dist/default/production/aula18_eusart.o
+__ptext5 42 0 CODE 0 text5 dist/default/production/aula18_eusart.o
+__ptext6 294 0 CODE 0 text6 dist/default/production/aula18_eusart.o
+__ptext7 30A 0 CODE 0 text7 dist/default/production/aula18_eusart.o
+__ptext8 352 0 CODE 0 text8 dist/default/production/aula18_eusart.o
+__size_of_lcd_instReg 0 0 ABS 0 - dist/default/production/aula18_eusart.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization 3A 0 CODE 0 cinit dist/default/production/aula18_eusart.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 330 0 CODE 0 idataBANK0 dist/default/production/aula18_eusart.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production/aula18_eusart.o
+_TXSTAbits 98 0 ABS 0 - dist/default/production/aula18_eusart.o
+__Hend_init 1E 0 CODE 0 end_init -
+init_ram0 2C6 0 CODE 0 inittext dist/default/production/aula18_eusart.o
+__end_of_lcd_dataReg 260 0 CODE 0 text3 dist/default/production/aula18_eusart.o
+__end_of_main 294 0 CODE 0 maintext dist/default/production/aula18_eusart.o
+__end_of_delay 2BE 0 CODE 0 text6 dist/default/production/aula18_eusart.o
+_PORTD 8 0 ABS 0 - dist/default/production/aula18_eusart.o
+_RCREG 1A 0 ABS 0 - dist/default/production/aula18_eusart.o
+_TXREG 19 0 ABS 0 - dist/default/production/aula18_eusart.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production/aula18_eusart.o
+_delay 294 0 CODE 0 text6 dist/default/production/aula18_eusart.o
+__pintentry 8 0 CODE 0 intentry dist/default/production/aula18_eusart.o
+__size_of_isr 0 0 ABS 0 - dist/default/production/aula18_eusart.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization 1E 0 CODE 0 cinit dist/default/production/aula18_eusart.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMMON 1 70 70 C 1
+intentry 0 4 8 1A6 2
+reset_vec 0 0 0 3 2
+dataBANK0 1 20 20 13 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
